@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="" selected disabled hidden>Select a subject</option>
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Complaint">Complaint</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <fieldset>
+        <legend>How did you hear about us?</legend>
+        <input type="radio" id="google" name="how" value="Google" />
+        <label for="google">Google</label>
+        <br />
+
+        <input type="radio" id="facebook" name="how" value="Facebook" />
+        <label for="facebook">Facebook</label>
+        <br />
+
+        <input type="radio" id="instagram" name="how" value="Instagram" />
+        <label for="instagram">Instagram</label>
+        <br />
+
+        <input type="radio" id="friend" name="how" value="Friend" />
+        <label for="friend">Friend</label>
+        <br />
+
+        <input type="radio" id="other" name="how" value="Other" />
+        <label for="other">Other</label>
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>What services are you interested in?</legend>
+        <input type="checkbox" id="coffee" name="services" value="Coffee" />
+        <label for="coffee">Coffee</label>
+        <br />
+
+        <input type="checkbox" id="pastries" name="services" value="Pastries" />
+        <label for="pastries">Pastries</label>
+        <br />
+
+        <input type="checkbox" id="sandwiches" name="services" value="Sandwiches" />
+        <label for="sandwiches">Sandwiches</label>
+        <br />
+
+        <input type="checkbox" id="salads" name="services" value="Salads" />
+        <label for="salads">Salads</label>
+        <br />
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(213,46,160,0.7),
+    rgba(147, 152, 248, 0.7))
+    , url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    background: red;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 1.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.cool-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+}
+
+.cool-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+/* ----- Responsive Design ------- */
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: fixed;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+.we-offer {
+    background-color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.we-offer h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.we-offer p {
+    font-size: 18px;
+    color: grey;
+}
+
+
+
+
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.box {
+    flex-basis: 30%;
+    background-color: #f5d5e8;
+    padding: 20px;
+}
+
+
+.box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.box:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+
+
+.our-cafe {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+.our-cafe h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.our-cafe p {
+    font-size: 18px;
+    color: grey;
+}
+
+
+/* Responsive styles for We Offer and Our unique Cafe sections */
+@media (max-width: 700px) {
+    .header .text-box {
+      width: 100%;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      text-align: center;
+    }
+  
+    .header .text-box h1 {
+      font-size: 32px;
+    }
+  
+    .header .text-box p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Responsive styles for menu items boxes */
+  @media (max-width: 700px) {
+    .menu-container {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .box {
+      flex-basis: 100%;
+      margin: 20px 0;
+    }
+  
+    .box h3 {
+      text-align: center;
+      font-size: 24px;
+    }
+  
+    .box p {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  
